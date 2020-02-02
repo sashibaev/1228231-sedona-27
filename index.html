@@ -93,8 +93,37 @@
           Укажите предполагаемые даты поездки,<br>
       	  и мы покажем вам лучшие предложения гостиниц в седоне
       	</p>
-      	<p>Поиск гостиницы в седоне</p>
-      	<!--Здесь будет форма-->
+        <button type="button">Поиск гостиницы в седоне</button>
+
+        <form action="index.html" method="Post">
+          <p>
+            <label for="date_of_arrival">Дата заезда:</label>
+            <input type="text" name="date_of_arrival" id="date_of_arrival" placeholder="24 апреля 2017">
+            <a href="">
+              <img src="img/calendar.svg" alt="Иконка открытия календаря в поле 'Дата заезда'">
+            </a>
+          </p>
+          <p>
+            <label for="date_of_departure">Дата выезда:</label>
+            <input type="text" name="date_of_departure" id="date_of_departure" placeholder="4 июля 2017">
+            <a href="">              
+              <img src="img/calendar.svg" alt="Иконка открытия календаря в поле 'Дата выезда'">
+            </a>         
+          </p>
+          <p>
+            <label for="number_of_adults">Взрослые:</label>
+            <input type="text" name="number_of_adults" value="2">
+            <button type="button">-</button>
+            <button type="button">+</button>
+          </p>
+          <p>
+            <label for="number_of_children">Дети:</label>
+            <input type="text" name="number_of_children" value="0">
+            <button type="button">-</button>
+            <button type="button">+</button>
+          </p>
+          <button type="submit">Найти</button>
+        </form> 
       </section>
 
       <section>
