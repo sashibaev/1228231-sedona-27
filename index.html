@@ -95,26 +95,30 @@
       	</p>
         <button type="button">Поиск гостиницы в седоне</button>
 
-        <form action="https://echo.htmlacademy.ru" method="Post">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <div>
             <label for="date-of-arrival">Дата заезда:</label>
             <p>
-              <input type="text" name="date-arrival" id="date-of-arrival" value="24 апреля 2017">          
-              <img src="img/calendar.svg" alt="Иконка открытия календаря в поле 'Дата заезда'">
+              <input type="text" name="date-arrival" id="date-of-arrival" placeholder="24 апреля 2017">
+              <a href="">          
+                <img src="img/calendar.svg" alt="Иконка открытия календаря в поле 'Дата заезда'">
+              </a>
             </p>
           </div>
           <div>
             <label for="date-of-departure">Дата выезда:</label>
             <p>
-              <input type="text" name="date-departure" id="date-of-departure" value="4 июля 2017">             
-              <img src="img/calendar.svg" alt="Иконка открытия календаря в поле 'Дата выезда'">
+              <input type="text" name="date-departure" id="date-of-departure" placeholder="4 июля 2017">
+              <a href="">             
+                <img src="img/calendar.svg" alt="Иконка открытия календаря в поле 'Дата выезда'">
+              </a>
             </p>       
           </div>
           <div>
             <label for="number-of-adults">Взрослые:</label>
             <p>
               <button type="button">-</button>
-              <input type="text" name="number-adults" id="number-of-adults" placeholder="2">
+              <input type="text" name="number-adults" id="number-of-adults" value="2">
               <button type="button">+</button>
             </p>
           </div>
@@ -122,7 +126,7 @@
             <label for="number-of-children">Дети:</label>
             <p>
               <button type="button">-</button>
-              <input type="text" name="number-children" id="number-of-children" placeholder="0">
+              <input type="text" name="number-children" id="number-of-children" value="0">
               <button type="button">+</button>
             </p>
           </div>

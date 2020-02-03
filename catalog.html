@@ -30,7 +30,48 @@
 
     	<section>
         <h2 class="visually-hidden">Раздел поиска гостиницы</h2>
-    		<!--Здесь будет раздел поиска гостиницы-->
+
+        <form action="catalog.html" method="post">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="swimming-pool" id="search-swimming-pool" checked>
+                <label for="search-swimming-pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" id="search-parking">
+                <label for="search-parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wi-fi" id="search-wi-fi">
+                <label for="search-wi-fi">WI-FI</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>            
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="hotel" id="search-hotel" checked>
+                <label for="search-hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="motel" id="search-motel" checked>
+                <label for="search-motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="apartments" id="search-apartments" checked>
+                <label for="search-apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (p):</legend>
+            <!-- Здесь будет двойной ползунок, выбор стоимости в сутки в рублях -->
+              <button type="button">Показать</button>
+          </fieldset>
+        </form>
     	</section>
 
     	<section>
