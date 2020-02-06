@@ -6,8 +6,9 @@ body {
   font-weight: normal;  
   letter-spacing: normal;
   text-transform: uppercase;
-
-  background-color: #ffffff;
+  width: 1280px;
+  height: 2762px;
+  background-color: #f2f2f2;
 }
 
 a {
@@ -23,6 +24,12 @@ h1 {
 
 li {
   list-style: none;
+}
+
+.body {
+	width: 1200px;
+	height: 2762px;
+	background-color: #ffffff;
 }
 
 .buttonMoreDetailed {
