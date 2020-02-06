@@ -26,12 +26,6 @@ li {
   list-style: none;
 }
 
-.body {
-	width: 1200px;
-	height: 2762px;
-	background-color: #ffffff;
-}
-
 .buttonMoreDetailed {
   color: #ffffff;
   font-size: 14px;
@@ -70,12 +64,12 @@ li {
   background-color: #766357;
 }
 
-.buttonToBook:hover {
+.button-to-book:hover {
    color: #ffffff;
    background-color: #604e43;
 }
 
-.buttonToBook:focus,
+.button-to-book:focus,
 .buttonToBook:active {
    color: rgba(255, 255, 255, 0.3);
    background-color: #503e33;
@@ -85,7 +79,7 @@ li {
 	border-color: #ffffff; 
 }
 
-.choiceButton {
+.choice-button {
   color: #ffffff;
   font-size: 21px;
   line-height: 26px;
@@ -93,41 +87,32 @@ li {
   background-color: #766357;
 }
 
-.choiceButton:hover {
+.choice-button:hover {
 	color: #ffffff;
 	background-color: #604e43;
 }
 
-.choiceButton:focus,
-.choiceButton:active {
+.choice-button:focus,
+.choice-button:active {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #503e33;
 }
 
-.choiceDate {
+.choice-date {
   background-color: #f2f2f2;
 }
 
-.choiceInterested{
-  color: #000000;
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: bold;
-}
-
-.choiceItem {
-	color: #000000;
-}
-
-.choicePeople {
+.choice-people {
   background-color: #f2f2f2;	
 }
 
 .container {
-
+  width: 1200px;
+  height: 2762px;
+  background-color: #ffffff;
 }
 
-.fiveReasons {
+.five-reasons {
   color: #333333;
   font-size: 14px;
   line-height: 26px;
@@ -135,7 +120,7 @@ li {
   letter-spacing: normal
 }
 
-.footerContacts {
+.footer-contacts {
   color: #000000;
   font-size: 21px;
   font-weight: bold;
@@ -149,13 +134,20 @@ li {
   line-height: 26px;	
 }
 
-.indexWelcome {
+.form-wrapper-interested{
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.index-welcome {
   background-color: #9a9999;
   background-image: url('../img/background-photo.jpg');
   background-repeat: no-repeat;
 }
 
-.listItem {
+.list-item {
 	color: #333333;
 }
 
@@ -164,22 +156,22 @@ li {
 	background-color: #f2f2f2;
 }
 
-.reasonsCity {
+.reasons-city {
   font-height: 21px;
 }
 
-.reasonsName {
+.reasons-name {
   color: #000000;
   font-size: 21px;
   font-weight: bold;	
 }
 
-.reasonsNameColor {
+.reasons-name-color {
   font-size: 21px;	
   font-weight: bold;
 }
 
-.reasonsColor {
+.reasons-color {
   color: #ffffff;
   background-color: #81b3d2;	
 } 
@@ -189,43 +181,43 @@ li {
 	background-color: rgb(111, 111, 111);
 }
 
-.searchList {
+.search-section {
   line-height: 21px;
 }
 
-.searchListName {
+.search-section-subtitle {
   font-size: 16px;
   font-weight: bold;
 }
 
-.siteNavigation {
+.site-navigation {
   font-weight: bold;
   font-stretch: normal;
 }
 
-.siteNavigation a {
+.site-navigation a {
   color: #000000;	
 }
 
-.siteNavigation a:focus,
-.siteNavigation a:active {
+.site-navigation a:focus,
+.site-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.siteNavigationActive a {
+.site-navigation-current a {
 	color: #766357;
 }
 
-.siteNavigationCurrent a: {
+.site-navigation-item a: {
   color: #000000;
 }
 
-.siteNavigationCurrent a:hover {
+.site-navigation-item a:hover {
   color: #81b3d2;
 }
 
-.siteNavigationCurrent a:focus,
-.siteNavigationCurrent a:active {
+.site-navigation-item a:focus,
+.site-navigation-item a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -235,33 +227,29 @@ li {
   line-height: 18px;
 }
 
-.sortingBy {
+.sorting-by {
   font-size: 12px;
   line-height: 18px;
 }
 
-.sortingByPrice a {
+.sorting-by-active a {
   color: #81b3d2;
 }
 
-.sortByRating a {
+.sorting-by-item a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.sortByRating a:hover {
+.sorting-by-item a:hover {
   color: #81b3d2;
 }
 
-.sortByRating a:focus,
-.sortByRating a:active {
+.sorting-by-item a:focus,
+.sorting-by-item a:active {
   color: #000000;
 }
 
-.sortingByType a {
-  color: rgba(0, 0, 0, 0.3);	
-}
-
-.toFindButton {
+.to-find-button {
   color: #ffffff;
   font-size: 21px;
   line-height: 26px;
@@ -269,7 +257,11 @@ li {
   background-color: #81b3d2
 }
 
-.visuallyHidden {
+.to-find-item {
+	color: #000000;
+}
+
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
