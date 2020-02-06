@@ -3,7 +3,7 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
-  font-weight: normal;  
+  font-weight: 400;  
   letter-spacing: normal;
   text-transform: uppercase;
   width: 1280px;
@@ -12,37 +12,34 @@ body {
 }
 
 a {
-  color: #000000;	
   text-decoration: none;
 }
 
 h1 {
-	color: #000000;
-	font-size: 21px;
-	font-weight: bold;
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
 }
 
-li {
-  list-style: none;
+.button-academy {
+  color: #000000;	
 }
 
 .button-more-detailed {
   color: #ffffff;
-  font-size: 14px;
-  line-height: 21px;
   background-color: #81b3d2;
- }
+}
 
- .button-more-detailed:hover {
-   color: #ffffff;
-   background-color: #669ec0;
- }
+.button-more-detailed:hover {
+  color: #ffffff;
+  background-color: #669ec0;
+}
 
- .button-more-detailed:focus,
- .button-more-detailed:active {
-   color: rgba(255, 255, 255, 0.3);
-   background-color: #5496bd;
- }
+.button-more-detailed:focus,
+.button-more-detailed:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
 
 .button-show {
   color: #ffffff;
@@ -52,50 +49,55 @@ li {
 }
 
 .button-telephone {
+  color: #000000;	
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;
+  list-style: none;
 }
 
 .button-to-book {
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 21px;
+  color: #ffffff;  
   background-color: #766357;
 }
 
 .button-to-book:hover {
-   color: #ffffff;
-   background-color: #604e43;
+  color: #ffffff;
+  background-color: #604e43;
 }
 
 .button-to-book:focus,
-.buttonToBook:active {
-   color: rgba(255, 255, 255, 0.3);
-   background-color: #503e33;
+.button-to-book:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.button-hotel {
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .checkboxes {
-	border-color: #ffffff; 
+  border-color: #ffffff;
 }
 
 .choice-button {
   color: #ffffff;
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
   background-color: #766357;
 }
 
 .choice-button:hover {
-	color: #ffffff;
-	background-color: #604e43;
+  color: #ffffff;
+  background-color: #604e43;
 }
 
 .choice-button:focus,
 .choice-button:active {
-	color: rgba(255, 255, 255, 0.3);
-	background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
 }
 
 .choice-date {
@@ -112,25 +114,29 @@ li {
   background-color: #ffffff;
 }
 
-.five-reasons {
+h2.reasons {
   color: #333333;
   font-size: 14px;
   line-height: 26px;
-  font-weight: normal;  
+  font-weight: 400;  
   letter-spacing: normal
 }
 
 .footer-contacts {
   color: #000000;
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;
+}
+
+.footer-social a {
+  color: #000000;
 }
 
 .found {
   color: #000000;
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;	
 }
 
@@ -138,22 +144,26 @@ li {
   color: #000000;
   font-size: 30px;
   line-height: 36px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .index-welcome {
   background-color: #9a9999;
-  background-image: url('../img/background-photo.jpg');
+  background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
 }
 
 .list-item {
-	color: #333333;
+  color: #333333;
+}
+
+.list-style {
+  list-style: none;	
 }
 
 .rating {
-	color: #666666;
-	background-color: #f2f2f2;
+  color: #666666;
+  background-color: #f2f2f2;
 }
 
 .reasons-city {
@@ -163,22 +173,22 @@ li {
 .reasons-name {
   color: #000000;
   font-size: 21px;
-  font-weight: bold;	
+  font-weight: 700;	
 }
 
-.reasons-name-color {
+.reasons-text-name {
   font-size: 21px;	
-  font-weight: bold;
+  font-weight: 700;
 }
 
-.reasons-color {
+.reason-text {
   color: #ffffff;
   background-color: #81b3d2;	
 } 
 
 .search {
-	color: #ffffff;
-	background-color: rgb(111, 111, 111);
+  color: #ffffff;
+  background-color: rgb(111, 111, 111);
 }
 
 .search-section {
@@ -187,17 +197,17 @@ li {
 
 .search-section-subtitle {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .site-navigation {
-  font-weight: bold;
+  font-weight: 700;
   font-stretch: normal;
 }
 
 .site-navigation a {
-  color: #000000;	
-}
+  color: #000000;
+}	
 
 .site-navigation a:focus,
 .site-navigation a:active {
@@ -205,7 +215,7 @@ li {
 }
 
 .site-navigation-current a {
-	color: #766357;
+  color: #766357;
 }
 
 .site-navigation-item a: {
@@ -221,6 +231,10 @@ li {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.sort-icon a {
+  color: #000000;
+}
+
 .sorting {
   color: #000000;
   font-size: 12px;
@@ -232,12 +246,12 @@ li {
   line-height: 18px;
 }
 
-.sorting-by-active a {
-  color: #81b3d2;
-}
-
 .sorting-by-item a {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-by-active a {
+  color: #81b3d2;
 }
 
 .sorting-by-item a:hover {
@@ -253,12 +267,12 @@ li {
   color: #ffffff;
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
   background-color: #81b3d2
 }
 
 .to-find-item {
-	color: #000000;
+  color: #000000;
 }
 
 .visually-hidden {
