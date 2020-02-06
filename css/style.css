@@ -26,38 +26,38 @@ li {
   list-style: none;
 }
 
-.buttonMoreDetailed {
+.button-more-detailed {
   color: #ffffff;
   font-size: 14px;
   line-height: 21px;
   background-color: #81b3d2;
  }
 
- .buttonMoreDetailed:hover {
+ .button-more-detailed:hover {
    color: #ffffff;
    background-color: #669ec0;
  }
 
- .buttonMoreDetailed:focus,
- .buttonMoreDetailed:active {
+ .button-more-detailed:focus,
+ .button-more-detailed:active {
    color: rgba(255, 255, 255, 0.3);
    background-color: #5496bd;
  }
 
-.buttonShow {
+.button-show {
   color: #ffffff;
   font-size: 14px;
   line-height: 21px;
   background-color: rgba(111, 111, 111, 0);
 }
 
-.buttonTelefon {
+.button-telephone {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
 }
 
-.buttonToBook {
+.button-to-book {
   color: #ffffff;
   font-size: 14px;
   line-height: 21px;
