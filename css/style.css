@@ -1,0 +1,276 @@
+body {
+  color: #333333;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;  
+  letter-spacing: normal;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+a {
+  color: #000000;	
+  text-decoration: none;
+}
+
+h1 {
+	color: #000000;
+	font-size: 21px;
+	font-weight: bold;
+}
+
+li {
+  list-style: none;
+}
+
+.buttonMoreDetailed {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: #81b3d2;
+ }
+
+ .buttonMoreDetailed:hover {
+   color: #ffffff;
+   background-color: #669ec0;
+ }
+
+ .buttonMoreDetailed:focus,
+ .buttonMoreDetailed:active {
+   color: rgba(255, 255, 255, 0.3);
+   background-color: #5496bd;
+ }
+
+.buttonShow {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: rgba(111, 111, 111, 0);
+}
+
+.buttonTelefon {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.buttonToBook {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: #766357;
+}
+
+.buttonToBook:hover {
+   color: #ffffff;
+   background-color: #604e43;
+}
+
+.buttonToBook:focus,
+.buttonToBook:active {
+   color: rgba(255, 255, 255, 0.3);
+   background-color: #503e33;
+}
+
+.checkboxes {
+	border-color: #ffffff; 
+}
+
+.choiceButton {
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  background-color: #766357;
+}
+
+.choiceButton:hover {
+	color: #ffffff;
+	background-color: #604e43;
+}
+
+.choiceButton:focus,
+.choiceButton:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #503e33;
+}
+
+.choiceDate {
+  background-color: #f2f2f2;
+}
+
+.choiceInterested{
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.choiceItem {
+	color: #000000;
+}
+
+.choicePeople {
+  background-color: #f2f2f2;	
+}
+
+.container {
+
+}
+
+.fiveReasons {
+  color: #333333;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;  
+  letter-spacing: normal
+}
+
+.footerContacts {
+  color: #000000;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.found {
+  color: #000000;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;	
+}
+
+.indexWelcome {
+  background-color: #9a9999;
+  background-image: url('../img/background-photo.jpg');
+  background-repeat: no-repeat;
+}
+
+.listItem {
+	color: #333333;
+}
+
+.rating {
+	color: #666666;
+	background-color: #f2f2f2;
+}
+
+.reasonsCity {
+  font-height: 21px;
+}
+
+.reasonsName {
+  color: #000000;
+  font-size: 21px;
+  font-weight: bold;	
+}
+
+.reasonsNameColor {
+  font-size: 21px;	
+  font-weight: bold;
+}
+
+.reasonsColor {
+  color: #ffffff;
+  background-color: #81b3d2;	
+} 
+
+.search {
+	color: #ffffff;
+	background-color: rgb(111, 111, 111);
+}
+
+.searchList {
+  line-height: 21px;
+}
+
+.searchListName {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.siteNavigation {
+  font-weight: bold;
+  font-stretch: normal;
+}
+
+.siteNavigation a {
+  color: #000000;	
+}
+
+.siteNavigation a:focus,
+.siteNavigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.siteNavigationActive a {
+	color: #766357;
+}
+
+.siteNavigationCurrent a: {
+  color: #000000;
+}
+
+.siteNavigationCurrent a:hover {
+  color: #81b3d2;
+}
+
+.siteNavigationCurrent a:focus,
+.siteNavigationCurrent a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting {
+  color: #000000;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sortingBy {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sortingByPrice a {
+  color: #81b3d2;
+}
+
+.sortByRating a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sortByRating a:hover {
+  color: #81b3d2;
+}
+
+.sortByRating a:focus,
+.sortByRating a:active {
+  color: #000000;
+}
+
+.sortingByType a {
+  color: rgba(0, 0, 0, 0.3);	
+}
+
+.toFindButton {
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  background-color: #81b3d2
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+

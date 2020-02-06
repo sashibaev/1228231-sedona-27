@@ -3,26 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="whiteBack">
     <header class="mainHeader">
       <nav class="mainNavigation">
       	<a class="mainHeaderLogo">
           <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип «City of Sedona»">
         </a>
         <ul class="siteNavigation">
-          <li class="siteNavigationLeft">
+          <li class="siteNavigationCurrent siteNavigationLeft">
             <a href="">Информация</a>
           </li>
-          <li class="siteNavigationLeft">
+          <li class="siteNavigationCurrent siteNavigationLeft">
             <a href="">Фото и видео</a>
           </li>
-          <li class="siteNavigationRight">
+          <li class="siteNavigationCurrent siteNavigationRight">
             <a href="">Карта штата</a>
           </li>
-          <li class="siteNavigationRight">
+          <li class="siteNavigationCurrent siteNavigationRight">
             <a href="catalog.html">Гостиницы</a>
           </li>	
         </ul>
@@ -30,7 +31,7 @@
     </header> 
 
     <main class="container">     
-      <div class="imageWelcome">
+      <div class="indexWelcome">
       	<img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать">
       </div>
 
@@ -39,38 +40,42 @@
       <section class="reasons">
         <h2 class="fiveReasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
         <ul class="reasonsList">
-          <li class="reasonsItem reasonsColor">
+          <li class="reasonsItem">
             <div class="reasonsImageTown">
               <img src="img/houses-picture.jpg" width="800" height="256" alt="Здания города">
             </div>
-            <p class="reasonsName ">Настоящий городок</p>
-            <p>— №1 —</p>
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <ul class="listCity">
-              <li class="listCityItem">
+            <div class="reasonsColor">
+              <p class="reasonsNameColor">Настоящий городок</p>
+              <p>— №1 —</p>
+              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <ul class="reasonsCity">
+              <li class="reasonsCityItem">
                 <p class="reasonsName">Жильё</p>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
-              <li class="listCityItem">
+              <li class="reasonsCityItem">
                 <p class="reasonsName">Еда</p>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="listCityItem">
+              <li class="reasonsCityItem">
                 <p class="reasonsName">Сувениры</p>
                 <p>Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
-          <li class="reasonsItem reasonsColor">
+          <li class="reasonsItem">
             <div class="reasonsImageBridge">
               <img src="img/mountain-bridge.jpg" width="800" height="256" alt="Мост дьявола">
-            </div> 
-            <h3 class="reasonsName">
-              Там есть<br>
-              Мост дьявола
-            </h3>
-            <p>— №2 —</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+            <div class="reasonsColor"> 
+              <h3 class="reasonsNameColor">
+                Там есть<br>
+                Мост дьявола
+              </h3>
+              <p>— №2 —</p>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
           </li>
           <li class="reasonsItem">
             <p class="reasonsName">Небольшая площадь</p>
@@ -97,44 +102,44 @@
           Укажите предполагаемые даты поездки,<br>
       	  и мы покажем вам лучшие предложения гостиниц в седоне
       	</p>
-        <button class="button choiceButton" type="button">Поиск гостиницы в седоне</button>
+        <button class="choiceButton" type="button">Поиск гостиницы в седоне</button>
 
         <form class="choiceForm" action="https://echo.htmlacademy.ru" method="post">
           <div class="choiceItem">
             <label for="dateOfArrival">Дата заезда:</label>
-            <p class="choiceDate">
-              <input type="text" name="dateArrival" id="dateOfArrival" placeholder="24 апреля 2017">
-              <button class="button" type="button">          
+            <p>
+              <input class="choiceDate" type="text" name="dateArrival" id="dateOfArrival" placeholder="24 апреля 2017">
+              <button class="buttonCalendar" type="button">          
                 <img src="img/calendar.svg" alt="Иконка открытия календаря в поле 'Дата заезда'">
               </button>
             </p>
           </div>
           <div class="choiceItem">
             <label for="dateOfDeparture">Дата выезда:</label>
-            <p class="choiceDate">
-              <input type="text" name="dateDeparture" id="dateOfDeparture" placeholder="4 июля 2017">      
-              <button class="button" type="button">
+            <p>
+              <input class="choiceDate" type="text" name="dateDeparture" id="dateOfDeparture" placeholder="4 июля 2017">      
+              <button class="buttonCalendar" type="button">
                 <img src="img/calendar.svg" alt="Иконка открытия календаря в поле 'Дата выезда'">
               </button>              
             </p>       
           </div>
           <div class="choiceItem">
             <label for="numberOfAdults">Взрослые:</label>
-            <p class="choicePeople">
-              <button class="button" type="button" aria-label="Уменьшить количество взрослых"></button>
-              <input type="text" name="numberAdults" id="numberOfAdults" value="2">
-              <button class="button" type="button" aria-label="Увеличить количество взрослых"></button>
+            <p>
+              <button class="buttonPeople" type="button" aria-label="Уменьшить количество взрослых"></button>
+              <input class="choicePeople" type="text" name="numberAdults" id="numberOfAdults" value="2">
+              <button class="buttonPeople" type="button" aria-label="Увеличить количество взрослых"></button>
             </p>
           </div>
           <div class="choiceItem">
             <label for="numberOfChildren">Дети:</label>
-            <p class="choicePeople">
-              <button class="button" type="button" aria-label="Уменьшить количество детей"></button>
-              <input type="text" name="numberChildren" id="numberOfChildren" value="0">
-              <button class="button" type="button" aria-label="Увеличить количество детей"></button>
+            <p>
+              <button class="buttonPeople" type="button" aria-label="Уменьшить количество детей"></button>
+              <input class="choicePeople" type="text" name="numberChildren" id="numberOfChildren" value="0">
+              <button class="buttonPeople" type="button" aria-label="Увеличить количество детей"></button>
             </p>
           </div>
-          <button class="button" type="submit">Найти</button>
+          <button class="toFindButton" type="submit">Найти</button>
         </form> 
       </section>
 
@@ -149,7 +154,7 @@
 
     <footer class="mainFooter">
       <p class="footerContacts">#visitSEDONA</p>
-      <a class="button telefon" href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
+      <a class="buttonTelefon" href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
       <ul class="footerSocial">
         <li class="socialButton">
           <a href="">Твиттер</a>
@@ -163,7 +168,7 @@
       </ul>
       <p class="footerCopyright">
       	Website by
-      	<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный онлайн‑курс HTML и CSS, уровень 1</a>
+      	<a class="buttonAcademy" href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный онлайн‑курс HTML и CSS, уровень 1</a>
       </p>	
     </footer>
   </body>
