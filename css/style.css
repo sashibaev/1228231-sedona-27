@@ -15,12 +15,6 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  color: #000000;
-  font-size: 21px;
-  font-weight: 700;
-}
-
 .button-academy {
   color: #000000;	
 }
@@ -114,14 +108,6 @@ h1 {
   background-color: #ffffff;
 }
 
-h2.reasons {
-  color: #333333;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 400;  
-  letter-spacing: normal
-}
-
 .footer-contacts {
   color: #000000;
   font-size: 21px;
@@ -161,6 +147,12 @@ h2.reasons {
   list-style: none;	
 }
 
+.main-title {
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+}
+
 .rating {
   color: #666666;
   background-color: #f2f2f2;
@@ -184,7 +176,15 @@ h2.reasons {
 .reason-text {
   color: #ffffff;
   background-color: #81b3d2;	
-} 
+}
+
+.reasons-title {
+  color: #333333;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;  
+  letter-spacing: normal
+}
 
 .search {
   color: #ffffff;
