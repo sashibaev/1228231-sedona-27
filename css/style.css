@@ -37,16 +37,12 @@ a {
 
 .button-show {
   color: #ffffff;
-  font-size: 14px;
-  line-height: 21px;
   background-color: rgba(111, 111, 111, 0);
 }
 
 .button-telephone {
   color: #000000;	
-  font-size: 21px;
   font-weight: 700;
-  line-height: 26px;
   list-style: none;
 }
 
@@ -71,35 +67,19 @@ a {
   line-height: 21px;
 }
 
-.checkboxes {
-  border-color: #ffffff;
+.button-show {
+  border: 2px solid #ffffff;
 }
 
-.choice-button {
-  color: #ffffff;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  background-color: #766357;
+.button-show:hover,
+.button-show:focus {
+  color: #000000;	
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
 }
 
-.choice-button:hover {
-  color: #ffffff;
-  background-color: #604e43;
-}
-
-.choice-button:focus,
-.choice-button:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #503e33;
-}
-
-.choice-date {
-  background-color: #f2f2f2;
-}
-
-.choice-people {
-  background-color: #f2f2f2;	
+.checkbox {
+  background-color: rgba(255, 255, 255, 0); 
 }
 
 .container {
@@ -110,9 +90,7 @@ a {
 
 .footer-contacts {
   color: #000000;
-  font-size: 21px;
   font-weight: 700;
-  line-height: 26px;
 }
 
 .footer-social a {
@@ -121,9 +99,7 @@ a {
 
 .found {
   color: #000000;
-  font-size: 21px;
   font-weight: 700;
-  line-height: 26px;	
 }
 
 .form-wrapper-interested{
@@ -131,6 +107,10 @@ a {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+}
+
+.icon-calendar {
+  : #cacaca;
 }
 
 .index-welcome {
@@ -189,6 +169,24 @@ a {
 .search {
   color: #ffffff;
   background-color: rgb(111, 111, 111);
+}
+
+.search-button {
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #766357;
+  border: none;
+}
+
+.search-button:hover {
+  color: #ffffff;
+  background-color: #604e43;
+}
+
+.search-button:focus,
+.search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
 }
 
 .search-section {
@@ -263,16 +261,44 @@ a {
   color: #000000;
 }
 
+.to-find-background {
+  background-color: #f2f2f2;
+}
+
+.to-find-background:hover {
+	background-color: #ebebeb;
+}
+
+.to-find-background:focus {
+  background-color: #ffffff;
+  border: 2px inside #e5e5e5; 
+}
+
 .to-find-button {
   color: #ffffff;
-  font-size: 21px;
-  line-height: 26px;
   font-weight: 700;
-  background-color: #81b3d2
+  background-color: #81b3d2;
+  border: none;
+}
+
+.to-find-button:hover {
+  background-color: #669ec0;
+}
+
+.to-find-button:focus,
+.to-find-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd; 
 }
 
 .to-find-item {
   color: #000000;
+}
+
+.to-find-text {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
 }
 
 .visually-hidden {
@@ -286,4 +312,13 @@ a {
   overflow: hidden;
 }
 
+.button-show,
+.button-telephone,
+.footer-contacts,
+.found,
+.search-button,
+.to-find-button {
+  font-size: 21px;
+  line-height: 26px;
+}
 
