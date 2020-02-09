@@ -25,7 +25,6 @@ a {
 }
 
 .button-more-detailed:hover {
-  color: #ffffff;
   background-color: #669ec0;
 }
 
@@ -40,19 +39,12 @@ a {
   background-color: rgba(111, 111, 111, 0);
 }
 
-.button-telephone {
-  color: #000000;	
-  font-weight: 700;
-  list-style: none;
-}
-
 .button-to-book {
   color: #ffffff;  
   background-color: #766357;
 }
 
 .button-to-book:hover {
-  color: #ffffff;
   background-color: #604e43;
 }
 
@@ -64,10 +56,10 @@ a {
 
 .button-hotel {
   font-size: 14px;
-  line-height: 21px;
 }
 
 .button-show {
+  font-size: 21px;
   border: 2px solid #ffffff;
 }
 
@@ -78,8 +70,8 @@ a {
   border: 2px solid #ffffff;
 }
 
-.checkbox {
-  background-color: rgba(255, 255, 255, 0); 
+.button-telephone {
+  list-style: none;
 }
 
 .container {
@@ -88,29 +80,14 @@ a {
   background-color: #ffffff;
 }
 
-.footer-contacts {
-  color: #000000;
-  font-weight: 700;
-}
-
 .footer-social a {
   color: #000000;
-}
-
-.found {
-  color: #000000;
-  font-weight: 700;
 }
 
 .form-wrapper-interested{
   color: #000000;
   font-size: 30px;
-  line-height: 36px;
   font-weight: 700;
-}
-
-.icon-calendar {
-  : #cacaca;
 }
 
 .index-welcome {
@@ -127,25 +104,13 @@ a {
   list-style: none;	
 }
 
-.main-title {
-  color: #000000;
-  font-size: 21px;
-  font-weight: 700;
-}
-
 .rating {
   color: #666666;
   background-color: #f2f2f2;
 }
 
 .reasons-city {
-  font-height: 21px;
-}
-
-.reasons-name {
-  color: #000000;
-  font-size: 21px;
-  font-weight: 700;	
+  line-height: 21px;
 }
 
 .reasons-text-name {
@@ -161,25 +126,25 @@ a {
 .reasons-title {
   color: #333333;
   font-size: 14px;
-  line-height: 26px;
   font-weight: 400;  
   letter-spacing: normal
 }
 
 .search {
   color: #ffffff;
-  background-color: rgb(111, 111, 111);
+  background-color: #6f6f6f;
+  background-image: url("../img/filter-background.jpg");
 }
 
 .search-button {
   color: #ffffff;
+  font-size: 21px;
   font-weight: 700;
   background-color: #766357;
   border: none;
 }
 
 .search-button:hover {
-  color: #ffffff;
   background-color: #604e43;
 }
 
@@ -187,10 +152,6 @@ a {
 .search-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
-}
-
-.search-section {
-  line-height: 21px;
 }
 
 .search-section-subtitle {
@@ -236,12 +197,10 @@ a {
 .sorting {
   color: #000000;
   font-size: 12px;
-  line-height: 18px;
 }
 
 .sorting-by {
   font-size: 12px;
-  line-height: 18px;
 }
 
 .sorting-by-item a {
@@ -261,21 +220,9 @@ a {
   color: #000000;
 }
 
-.to-find-background {
-  background-color: #f2f2f2;
-}
-
-.to-find-background:hover {
-	background-color: #ebebeb;
-}
-
-.to-find-background:focus {
-  background-color: #ffffff;
-  border: 2px inside #e5e5e5; 
-}
-
 .to-find-button {
   color: #ffffff;
+  font-size: 21px;
   font-weight: 700;
   background-color: #81b3d2;
   border: none;
@@ -291,14 +238,17 @@ a {
   background-color: #5496bd; 
 }
 
-.to-find-item {
-  color: #000000;
+.to-find-item input {  	
+  background-color: #f2f2f2;
 }
 
-.to-find-text {
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: 700;
+.to-find-item input:hover {
+  background-color: #ebebeb;	
+}
+
+.to-find-item input:focus {
+  background-color: #ffffff;
+  border: 2px inside #e5e5e5; 
 }
 
 .visually-hidden {
@@ -312,13 +262,19 @@ a {
   overflow: hidden;
 }
 
-.button-show,
 .button-telephone,
 .footer-contacts,
 .found,
-.search-button,
-.to-find-button {
+.main-title,
+.reasons-name {
+  color: #000000;
   font-size: 21px;
-  line-height: 26px;
+  font-weight: 700;
 }
 
+.to-find-text,
+.to-find-item input {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;	
+}
