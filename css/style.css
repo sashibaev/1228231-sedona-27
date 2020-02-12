@@ -1,13 +1,12 @@
-body {  
+body {
   color: #333333;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
-  font-weight: 400;  
+  font-weight: 400;
   letter-spacing: normal;
-  text-transform: uppercase;	  
+  text-transform: uppercase;
   background-color: #f2f2f2;
-  
 }
 
 a {
@@ -15,16 +14,14 @@ a {
 }
 
 .container {
-  margin: 0;
-  padding: 0;	
+  margin: 0 auto;
+  padding: 0;
   width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: #ffffff;  
+  background-color: #ffffff;
 }
 
 .button-academy {
-  color: #000000;	
+  color: #000000;
 }
 
 .button-more-detailed {
@@ -42,13 +39,8 @@ a {
   background-color: #5496bd;
 }
 
-.button-show {
-  color: #ffffff;
-  background-color: rgba(111, 111, 111, 0);
-}
-
 .button-to-book {
-  color: #ffffff;  
+  color: #ffffff;
   background-color: #766357;
 }
 
@@ -67,25 +59,25 @@ a {
 }
 
 .button-show {
+  color: #ffffff;
   font-size: 21px;
   border: 2px solid #ffffff;
+  background-color: rgba(111, 111, 111, 0);
 }
 
 .button-show:hover,
 .button-show:focus {
-  color: #000000;	
+  color: #000000;
   background-color: #ffffff;
 }
 
 .find-item-wrapper {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
 }
 
-.footer-social {	
+.footer-social {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -94,7 +86,7 @@ a {
   color: #000000;
 }
 
-.form-wrapper-interested{
+.form-wrapper-interested {
   color: #000000;
   font-size: 30px;
   font-weight: 700;
@@ -102,9 +94,9 @@ a {
   text-align: center;
 }
 
-.form-wrapper-text{
+.form-wrapper-text {
   display: block;
-  text-align: center;  
+  text-align: center;
 }
 
 .found {
@@ -114,6 +106,12 @@ a {
 .index-welcome {
   background-image: url(../img/background-photo.jpg);
   background-size: 1200px 773px;
+}
+
+.index-welcome::after {
+  content: url("../img/intro-mask.svg");
+  position: relative;
+  bottom: -10px;
 }
 
 .index-welcome img {
@@ -135,17 +133,12 @@ a {
   align-items: flex-start;
 }
 
-.list-hotels-wrapper {
-  margin: 0;
-  padding: 0;
-} 
-
 .list-of-hotel {
   margin: 0;
   padding: 0;
 }
 
-.list-rating-estimation{
+.list-rating-estimation {
   margin-left: auto;
 }
 .list-sorting-wrapper {
@@ -155,30 +148,23 @@ a {
 }
 
 .list-style {
-  list-style: none;	
+  list-style: none;
 }
 
 .main-footer {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
 .main-header-logo {
   margin: 0;
-  padding: 0;	
+  padding: 0;
   display: block;
   position: absolute;
   z-index: 2;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.main-navigation {
-  margin: 0;
-  padding: 0;	
-  background-color: #dd8795;
 }
 
 .main-title {
@@ -200,26 +186,26 @@ a {
 }
 
 .reasons-text-name {
-  font-size: 21px;	
+  font-size: 21px;
   font-weight: 700;
 }
 
 .reason-text {
   color: #ffffff;
-  background-color: #81b3d2;	
+  background-color: #81b3d2;
 }
 
 .reasons-title {
-  display: block;	
   color: #333333;
   font-size: 14px;
-  font-weight: 400;  
+  font-weight: 400;
   letter-spacing: normal;
+  display: block;
   text-align: center;
   margin-top: 38px;
 }
 
-.search {	
+.search {
   color: #ffffff;
   padding-top: 30px;
   background-color: #6f6f6f;
@@ -227,15 +213,15 @@ a {
 }
 
 .search-button {
-  display: block;
   color: #ffffff;
   font-size: 21px;
   font-weight: 700;
-  text-transform: uppercase;	
+  text-transform: uppercase;
   background-color: #766357;
   border: none;
   width: 568px;
   min-height: 86px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -264,13 +250,9 @@ a {
   font-weight: 700;
 }
 
-.site-navigation {  
+.site-navigation {
   margin: 0;
   padding: 0;
-  width: 1200px;
-  background-color: #ffffff;  
-  position: absolute; 
-  z-index: 1; 
   display: flex;
   justify-content: space-between;
 }
@@ -279,23 +261,15 @@ a {
   color: #766357;
 }
 
-.site-navigation-item {	
+.site-navigation-item {
   width: 239px;
   min-height: 56px;
 }
 
 .site-navigation-item a {
-  color: #000000;
-  font-size: 12px;
-  font-weight: 700;
-  /*Использовать только в процессе разметки, потом удалить  */
-  background-color: #eee3eb;  
+  position: relative;
+  top: 14px;
 }
-
-.site-navigation-right {
-  display: block;	
-  margin-left: auto;
-} 
 
 .site-navigation-item a:hover {
   color: #81b3d2;
@@ -306,7 +280,32 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.site-navigation-right {
+.site-navigation-first a {
+  position: relative;
+  left: 72px;
+}
+
+.site-navigation-second a {
+  position: relative;
+  left: 73px;
+}
+
+.site-navigation-third,
+.site-navigation-fourth {
+  text-align: right;
+}
+
+.site-navigation-third a {
+  position: relative;
+  right: 73px;
+}
+
+.site-navigation-fourth a {
+  position: relative;
+  right: 72px;
+}
+
+.site-navigation-shift {
   margin-left: auto;
 }
 
@@ -357,13 +356,13 @@ a {
 }
 
 .to-find-button {
-  display: block;	
   color: #ffffff;
   font-size: 21px;
   font-weight: 700;
   background-color: #81b3d2;
   border: none;
   width: 458px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   min-height: 58px;
@@ -376,15 +375,15 @@ a {
 .to-find-button:focus,
 .to-find-button:active {
   color: rgba(255, 255, 255, 0.3);
-  background-color: #5496bd; 
+  background-color: #5496bd;
 }
 
 .to-find-form {
-  display: block;
   width: 568px;
   min-height: 395px;
-  text-transform: uppercase;	
+  text-transform: uppercase;
   background-color: #ffffff;
+  display: block;
   position: absolute;
   z-index: 2;
   left: 50%;
@@ -393,23 +392,22 @@ a {
 
 .to-find-item {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
 .to-find-item input {
-  text-transform: uppercase;  	
+  text-transform: uppercase;
   background-color: #f2f2f2;
 }
 
 .to-find-item input:hover {
-  background-color: #ebebeb;	
+  background-color: #ebebeb;
 }
 
 .to-find-item input:focus {
   background-color: #ffffff;
-  border: 2px inside #e5e5e5; 
+  border: 2px inside #e5e5e5;
 }
 
 .visually-hidden {
@@ -433,9 +431,10 @@ a {
   font-weight: 700;
 }
 
+.site-navigation-item a,
 .to-find-text,
 .to-find-item input {
   color: #000000;
   font-size: 14px;
-  font-weight: 700;	
+  font-weight: 700;
 }
