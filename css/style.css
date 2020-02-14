@@ -173,18 +173,98 @@ a {
   background-color: #f2f2f2;
 }
 
+.reasons-block-second {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 .reasons-city {
   line-height: 21px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.reasons-city-item:nth-child(1) {
+  width: 284px;
+}
+
+.reasons-city-item:nth-child(2) {
+  width: 284px;
+  margin-left: 133px;
+}
+
+.reasons-city-item:nth-child(3) {
+  width: 273px;
+  margin-left: 122px;
+}
+
+.reasons-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  /*Использовать временно, для разметки*/
+  background-color: aquamarine;
+}
+
+.reasons-image-second {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.reasons-item {
+  text-align: center;
+  min-height: 256px;
+}
+
+.reasons-item:nth-child(1) {
+  color: #ffffff;
+  width: 400px;
+  align-self: flex-start;
+  background-color: #81b3d2; 
+}
+
+.reasons-item:nth-child(2) {
+  color: #ffffff;
+  width: 400px;
+  background-color: #81b3d2; 
+}
+
+.reasons-item:nth-child(3) {
+  background-color: #eeeeee;
+  flex-grow: 1;
+}
+
+.reasons-item:nth-child(4) {
+  background-color: #eeeeee;
+  flex-grow: 1;
+}
+
+.reasons-item:nth-child(5) {
+  background-color: #eeeeee;
+  flex-grow: 1;
+}
+
+.reasons-item-wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .reasons-text-name {
   font-size: 21px;
   font-weight: 700;
-}
-
-.reason-text {
-  color: #ffffff;
-  background-color: #81b3d2;
 }
 
 .reasons-title {
@@ -230,6 +310,27 @@ a {
 .search-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
+}
+
+.search-form {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search-section-infrastructure {
+  margin-left: 50px;
+}
+
+.search-section-type {
+  margin-left: 80px;
+}
+
+.search-list {
+  margin-left: auto;
+  margin-right: 50px;
 }
 
 .search-section-subtitle {
@@ -289,7 +390,7 @@ a {
 .sort {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .sort-icon {
@@ -312,7 +413,7 @@ a {
   width: 238px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .sorting-by-item a {
