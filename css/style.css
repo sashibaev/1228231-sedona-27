@@ -210,8 +210,11 @@ a {
   justify-content: flex-start;
   flex-wrap: wrap;
   align-items: flex-start;
-  /*Использовать временно, для разметки*/
-  background-color: aquamarine;
+}
+
+.reasons-image-first,
+.reasons-image-second {
+  line-height: 0;
 }
 
 .reasons-item-first,
