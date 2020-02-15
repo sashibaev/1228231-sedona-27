@@ -24,6 +24,20 @@ a {
   color: #000000;
 }
 
+.button-calendar {
+  position: absolute;
+  z-index: 5;
+  left: 470px;
+}
+
+.button-calendar-arrival {
+  top: 60px;
+}
+
+.button-calendar-departure {
+  top: 140px;
+}
+
 .button-more-detailed {
   color: #ffffff;
   background-color: #81b3d2;
@@ -71,9 +85,13 @@ a {
   background-color: #ffffff;
 }
 
+.checkboxes {
+  padding-left: 0;
+}
+
 .find-item-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .footer-social {
@@ -97,10 +115,6 @@ a {
   text-align: center;
 }
 
-.found {
-  margin-left: 70px;
-}
-
 .index-welcome {
   background-image: url(../img/background-photo.jpg);
 }
@@ -121,11 +135,18 @@ a {
 
 .list-item {
   margin: 0;
-  padding: 0;
+  padding: 30px 0;
   color: #333333;
+  border-top: 1px solid #000000;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+}
+
+.list-about-hotel {
+  margin-left: 30px;
+  height: 90px;
+  line-height: 20px;
 }
 
 .list-of-hotels {
@@ -165,7 +186,11 @@ a {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 140px;
+  margin-top: 61px;
+}
+
+.name-hotel {
+  margin-top: 0;
 }
 
 .rating {
@@ -173,34 +198,25 @@ a {
   background-color: #f2f2f2;
 }
 
-.reasons-block-second {
-  margin: 0;
-  padding: 0;
+.reasons-block {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .reasons-city {
+  padding: 0;
   line-height: 21px;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: flex-start;
+  flex-grow: 1;
 }
 
-.reasons-city-first {
-  width: 284px;
-}
-
-.reasons-city-second {
-  width: 284px;
-  margin-left: 133px;
-}
-
-.reasons-city-third {
-  width: 273px;
-  margin-left: 122px;
+.reasons-city-item {
+  width: 300px;
+  text-align: center;
 }
 
 .reasons-list {
@@ -212,42 +228,61 @@ a {
   align-items: flex-start;
 }
 
-.reasons-image-first,
-.reasons-image-second {
+.reasons-image {
   line-height: 0;
 }
 
-.reasons-item-first,
-.reasons-item-second {
-  color: #ffffff;
-  width: 400px;
+.reasons-item {
+  box-sizing: border-box;
   text-align: center;
-  min-height: 256px;
-  align-self: flex-start;
-  background-color: #81b3d2;
-}
-
-.reasons-item-third,
-.reasons-item-fourth,
-.reasons-item-fifth {
-  text-align: center;
+  padding-top: 30px;
+  width: 250px;
   min-height: 256px;
   background-color: #eeeeee;
   flex-grow: 1;
 }
 
+.reasons-item p {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.reasons-item-image {
+  color: #ffffff;
+  width: 400px;
+  min-height: 256px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #81b3d2;
+}
+
+.reasons-item-image p {
+  width: 305px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .reasons-item-wrapper {
-  margin: 0;
-  padding: 0;
   display: flex;
-  flex-direction: row-reverse;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-.reasons-text-name {
+.reasons-item .reasons-name {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reasons-item-image .reasons-text-name {
   font-size: 21px;
   font-weight: 700;
+  width: 200px;
+  padding-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .reasons-title {
@@ -257,11 +292,12 @@ a {
   letter-spacing: normal;
   text-align: center;
   margin-top: 38px;
+  margin-bottom: 56px;
 }
 
 .result-of-search {
   margin: 0;
-  padding: 0;
+  padding: 0 72px;
 }
 
 .search {
@@ -296,19 +332,20 @@ a {
 }
 
 .search-form {
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding: 31px 72px;
 }
 
 .search-section-infrastructure {
   margin-left: 50px;
+  border: none;
 }
 
 .search-section-type {
   margin-left: 80px;
+  border: none;
 }
 
 .search-list {
@@ -427,6 +464,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   min-height: 58px;
+  display: inline-block;
 }
 
 .to-find-button:hover {
@@ -439,20 +477,32 @@ a {
   background-color: #5496bd;
 }
 
+.to-find-date input {
+  width: 346px;
+  min-height: 38px;
+  box-sizing: border-box;
+  padding-left: 21px;
+}
+
 .to-find-form {
   width: 568px;
   min-height: 395px;
   text-transform: uppercase;
   background-color: #ffffff;
+  padding: 41px 55px 55px;
   position: absolute;
   z-index: 2;
   left: 50%;
   transform: translateX(-50%);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .to-find-item {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -468,6 +518,17 @@ a {
 .to-find-item input:focus {
   background-color: #ffffff;
   border: 2px inside #e5e5e5;
+}
+
+.to-find-people {
+  width: 180px;
+}
+
+.to-find-people input {
+  box-sizing: border-box;
+  width: 38px;
+  min-height: 38px;
+  text-align: center;
 }
 
 .visually-hidden {

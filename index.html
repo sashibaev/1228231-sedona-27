@@ -41,37 +41,37 @@
         <section class="reasons">
           <h2 class="reasons-title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
           <ul class="reasons-list list-style">
-            <li class="reasons-block-first">
+            <li class="reasons-block">
               <div class="reasons-item-wrapper">
-                <div class="reasons-image-first">
-                  <img src="img/houses-picture.jpg" width="800" height="256" alt="Здания города">
-                </div>
-                <div class="reasons-item-first">
+                <div class="reasons-item-image">
                   <p class="reasons-text-name">Настоящий городок</p>
                   <p>— №1 —</p>
                   <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
+                <div class="reasons-image">
+                  <img src="img/houses-picture.jpg" width="800" height="256" alt="Здания города">
+                </div>
               </div>
               <ul class="reasons-city list-style">
-                <li class="reasons-city-first">
+                <li class="reasons-city-item housing">
                   <p class="reasons-name">Жильё</p>
                   <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
-                <li class="reasons-city-second">
+                <li class="reasons-city-item meal">
                   <p class="reasons-name">Еда</p>
                   <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
-                <li class="reasons-city-third">
+                <li class="reasons-city-item souvenirs">
                   <p class="reasons-name">Сувениры</p>
                   <p>Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
             </li>
-            <li class="reasons-block-second">
-              <div class="reasons-image-second">
+            <li class="reasons-block">
+              <div class="reasons-image">
                 <img src="img/mountain-bridge.jpg" width="800" height="256" alt="Мост дьявола">
               </div>
-              <div class="reasons-item-second">
+              <div class="reasons-item-image">
                 <h3 class="reasons-text-name">
                   Там есть<br>
                   Мост дьявола
@@ -80,17 +80,17 @@
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
             </li>
-            <li class="reasons-item-third">
-              <p class="reasons-name">Небольшая площадь</p>
+            <li class="reasons-item reasons-item">
+              <p class="reasons-name attractions">Небольшая площадь</p>
               <p>— №3 —</p>
               <p>Все достопримечательности находятся очень близко</p>
             </li>
-            <li class="reasons-item-fourth">
+            <li class="reasons-item how-to-get">
               <p class="reasons-name">Красивая дорога</p>
               <p>— №4 —</p>
               <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-            <li class="reasons-item-fifth">
+            <li class="reasons-item tourist-visits">
               <p class="reasons-name">Мало туристов</p>
               <p>— №5 —</p>
               <p>Большинство едет в гранд каньон и толпится там</p>
@@ -108,26 +108,26 @@
           <button class="search-button" type="button">Поиск гостиницы в седоне</button>
 
           <form class="to-find-form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="to-find-item">
+            <div class="to-find-item to-find-date">
               <label class="to-find-text" for="date-of-arrival">Дата заезда:</label>
               <p>
                 <input type="text" name="date-arrival" id="date-of-arrival" value="24 апреля 2017">
-                <button class="to-find-text button-calendar" type="button">
+                <button class="button-calendar button-calendar-arrival" type="button">
                   <img class="icon-calendar" src="img/calendar.svg" alt="Иконка открытия календаря в поле 'Дата заезда'">
                 </button>
               </p>
             </div>
-            <div class="to-find-item">
+            <div class="to-find-item to-find-date">
               <label class="to-find-text" for="date-of-departure">Дата выезда:</label>
               <p>
                 <input type="text" name="date-departure" id="date-of-departure" value="4 июля 2017">
-                <button class="button-calendar" type="button">
+                <button class="button-calendar button-calendar-departure" type="button">
                   <img class="icon-calendar" src="img/calendar.svg" alt="Иконка открытия календаря в поле 'Дата выезда'">
                 </button>
               </p>
             </div>
             <div class="find-item-wrapper">
-              <div class="to-find-item">
+              <div class="to-find-item to-find-people">
                 <label class="to-find-text" for="number-of-adults">Взрослые:</label>
                 <p>
                   <button class="button-people" type="button" aria-label="Уменьшить количество взрослых"></button>
@@ -135,7 +135,7 @@
                   <button class="button-people" type="button" aria-label="Увеличить количество взрослых"></button>
                 </p>
               </div>
-              <div class="to-find-item">
+              <div class="to-find-item to-find-people">
                 <label class="to-find-text" for="number-of-children">Дети:</label>
                 <p>
                   <button class="button-people" type="button" aria-label="Уменьшить количество детей"></button>
