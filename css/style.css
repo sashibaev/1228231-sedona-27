@@ -195,10 +195,9 @@ a {
 }
 
 .cost-hotel {
-  margin-top: 11px;
-  margin-bottom: 15px;
+  margin-top: 6px;
+  margin-bottom: 13px;
   padding: 0;
-  min-width: 250px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -287,7 +286,7 @@ a {
 
 .list-item {
   margin: 0;
-  padding: 30px 0 22px 0;
+  padding-bottom: 22px;
   color: #333333;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   display: flex;
@@ -296,15 +295,14 @@ a {
 }
 
 .list-about-hotel {
+  margin-top: 25px;
   margin-left: 30px;
-  height: 90px;
-  line-height: 0;
   box-sizing: border-box;
 }
 
 .list-about-hotel > a {
   color: #000000;
-  line-height: 16px;
+  line-height: 26px;
 }
 
 .list-about-hotel > a:hover,
@@ -317,6 +315,7 @@ a {
 }
 
 .list-image-hotel {
+  margin-top: 30px;
   margin-left: 72px;
   padding: 0;
 }
@@ -327,8 +326,7 @@ a {
 }
 
 .list-rating-estimation {
-  margin: 0 73px 0 auto;
-  height: 90px;
+  margin: 30px 73px 0 auto;
   box-sizing: border-box;
 }
 
@@ -344,7 +342,6 @@ a {
 }
 
 .main-footer {
-  min-height: 120px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -361,7 +358,6 @@ a {
 
 .main-title {
   width: 440px;
-  min-height: 48px;
   line-height: 24px;
   text-align: center;
   margin-left: auto;
@@ -371,13 +367,6 @@ a {
 
 .map-image {
   line-height: 0;
-}
-
-.name-hotel {
-  margin: 0;
-  padding: 0;
-  border: none;
-  line-height: 16px;
 }
 
 .rating {
@@ -628,6 +617,43 @@ a {
   fill: rgba(255, 255, 255, 0.3);
 }
 
+.social-button-facebook,
+.social-button-twitter,
+.social-button-youtube {
+  position: relative;
+}
+
+.social-button-facebook::before,
+.social-button-twitter::before,
+.social-button-youtube::before {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  width: 17px;
+  height: 15px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social-button-facebook::before {
+  background: url("../img/fb-icon.svg") no-repeat;
+}
+
+.social-button-twitter::before {
+  background: url("../img/twitter-icon.svg") no-repeat;
+}
+
+.social-button-youtube::before {
+  background: url("../img/youtube-icon.svg") no-repeat;
+}
+
+.social-button-facebook:active::before,
+.social-button-twitter:active::before,
+.social-button-youtube:active::before {
+  opacity: 30%;
+}
+
 .sort {
   margin-left: auto;
   margin-right: 73px;
@@ -672,26 +698,24 @@ a {
   color: #000000;
 }
 
-.stardoms {
+.stars {
+  margin-top: 0;
+  margin-left: auto;
   margin-bottom: 46px;
-  padding: 0;
   height: 17px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  background: url("../img/star.svg") space;
 }
 
-.stardom-one {
-  margin: 0;
-  padding: 0;
-  margin-left: 5px;
-  width: 18px;
-  height: 17px;
-  background: url(../img/star.svg) no-repeat;
+.stars-two {
+  width: 43px;
 }
 
-.stardom-one:first-child {
-  margin: 0;
+.stars-three {
+  width: 65px;
+}
+
+.stars-four {
+  width: 88px;
 }
 
 .to-find-button {
@@ -737,7 +761,6 @@ a {
 .to-find-form {
   margin: 0;
   width: 568px;
-  text-transform: uppercase;
   background-color: #ffffff;
   padding: 55px;
   position: absolute;
