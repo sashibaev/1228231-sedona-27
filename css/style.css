@@ -13,10 +13,6 @@ a {
   text-decoration: none;
 }
 
-input::-ms-clear {
-  display: none;
-}
-
 .container {
   margin: 0 auto;
   padding: 0;
@@ -76,14 +72,22 @@ input::-ms-clear {
 .button-calendar-departure {
   top: 129px;
 }
+.button-hotel {
+  margin: 0;
+  padding: 0;
+}
+
+.button-hotel a {
+  padding-top: 3px;
+  line-height: 21px;
+}
 
 .button-more-detailed {
   display: inline-block;
   width: 110px;
-  height: 27px;
   box-sizing: border-box;
   text-align: center;
-  margin: 0;
+  height: 27px;
   margin-right: 3px;
   color: #ffffff;
   background-color: #81b3d2;
@@ -129,10 +133,6 @@ input::-ms-clear {
   background-color: #81b3d2;
 }
 
-.button-people-plus {
-  position: relative;
-}
-
 .button-people-plus::after {
   position: absolute;
   content: "";
@@ -164,8 +164,6 @@ input::-ms-clear {
   box-sizing: border-box;
   text-align: center;
   color: #ffffff;
-  margin: 0;
-  border: none;
   background-color: #766357;
 }
 
@@ -178,12 +176,6 @@ input::-ms-clear {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
-
-.button-hotel {
-  margin: 0;
-  padding: 0;
-}
-
 
 .button-show {
   color: #ffffff;
@@ -203,7 +195,8 @@ input::-ms-clear {
 }
 
 .cost-hotel {
-  margin: 0;
+  margin-top: 11px;
+  margin-bottom: 15px;
   padding: 0;
   min-width: 250px;
   display: flex;
@@ -275,7 +268,7 @@ input::-ms-clear {
 }
 
 .index-welcome {
-  background: url("../img/background-photo.jpg") no-repeat 0 -56px;
+  background: #c9d4d6 url("../img/background-photo.jpg") no-repeat 0 -56px;
 }
 
 .index-welcome::after {
@@ -303,15 +296,10 @@ input::-ms-clear {
 }
 
 .list-about-hotel {
-  margin:0 0 0 30px;
-  padding: 0;
+  margin-left: 30px;
   height: 90px;
-  border: none;
+  line-height: 0;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
 }
 
 .list-about-hotel > a {
@@ -329,7 +317,7 @@ input::-ms-clear {
 }
 
 .list-image-hotel {
-  margin: 0 0 0 72px;
+  margin-left: 72px;
   padding: 0;
 }
 
@@ -339,14 +327,9 @@ input::-ms-clear {
 }
 
 .list-rating-estimation {
-  padding: 0;
   margin: 0 73px 0 auto;
   height: 90px;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
 }
 
 .list-sorting-wrapper {
@@ -361,7 +344,6 @@ input::-ms-clear {
 }
 
 .main-footer {
-  margin: 0;
   min-height: 120px;
   box-sizing: border-box;
   display: flex;
@@ -691,7 +673,7 @@ input::-ms-clear {
 }
 
 .stardoms {
-  margin: 0;
+  margin-bottom: 46px;
   padding: 0;
   height: 17px;
   display: flex;
@@ -746,6 +728,10 @@ input::-ms-clear {
   min-height: 38px;
   box-sizing: border-box;
   padding-left: 21px;
+}
+
+.to-find-date input::-ms-clear {
+  display: none;
 }
 
 .to-find-form {
