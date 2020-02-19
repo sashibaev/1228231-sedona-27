@@ -83,7 +83,8 @@ input::-ms-clear {
   height: 27px;
   box-sizing: border-box;
   text-align: center;
-  margin-right: 6px;
+  margin: 0;
+  margin-right: 3px;
   color: #ffffff;
   background-color: #81b3d2;
 }
@@ -163,6 +164,8 @@ input::-ms-clear {
   box-sizing: border-box;
   text-align: center;
   color: #ffffff;
+  margin: 0;
+  border: none;
   background-color: #766357;
 }
 
@@ -177,11 +180,10 @@ input::-ms-clear {
 }
 
 .button-hotel {
-  font-size: 15px;
-  border: none;
-  height: 27px;
   margin: 0;
+  padding: 0;
 }
+
 
 .button-show {
   color: #ffffff;
@@ -201,9 +203,20 @@ input::-ms-clear {
 }
 
 .cost-hotel {
-  margin-bottom: 18px;
+  margin: 0;
   padding: 0;
-  line-height: 12px;
+  min-width: 250px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.cost-hotel p {
+  line-height: 21px;
+}
+
+.cost {
+  margin: 0;
 }
 
 .find-item-wrapper {
@@ -301,6 +314,20 @@ input::-ms-clear {
   align-items: flex-start;
 }
 
+.list-about-hotel > a {
+  color: #000000;
+  line-height: 16px;
+}
+
+.list-about-hotel > a:hover,
+.list-about-hotel > a:focus {
+  color: #81b3d2;
+}
+
+.list-about-hotel > a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .list-image-hotel {
   margin: 0 0 0 72px;
   padding: 0;
@@ -335,12 +362,12 @@ input::-ms-clear {
 
 .main-footer {
   margin: 0;
-  height: 120px;
+  min-height: 120px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 101px;
+  padding: 36px 101px;
 }
 
 .main-header-logo {
@@ -352,7 +379,7 @@ input::-ms-clear {
 
 .main-title {
   width: 440px;
-  height: 48px;
+  min-height: 48px;
   line-height: 24px;
   text-align: center;
   margin-left: auto;
@@ -367,20 +394,8 @@ input::-ms-clear {
 .name-hotel {
   margin: 0;
   padding: 0;
+  border: none;
   line-height: 16px;
-}
-
-.name-hotel a {
-  color: #000000;
-}
-
-.name-hotel a:hover,
-.name-hotel a:focus {
-  color: #81b3d2;
-}
-
-.name-hotel a:active {
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .rating {
@@ -675,10 +690,26 @@ input::-ms-clear {
   color: #000000;
 }
 
-.stardom {
+.stardoms {
   margin: 0;
   padding: 0;
-  line-height: 17px;
+  height: 17px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.stardom-one {
+  margin: 0;
+  padding: 0;
+  margin-left: 5px;
+  width: 18px;
+  height: 17px;
+  background: url(../img/star.svg) no-repeat;
+}
+
+.stardom-one:first-child {
+  margin: 0;
 }
 
 .to-find-button {
@@ -728,10 +759,6 @@ input::-ms-clear {
   left: 50%;
   transform: translateX(-50%);
   box-sizing: border-box;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  align-items: flex-start;
 }
 
 .to-find-item {
@@ -782,8 +809,8 @@ input::-ms-clear {
 }
 
 .type {
-  display: inline-block;
   width: 110px;
+  margin: 0;
   margin-right: 6px;
 }
 
@@ -801,8 +828,8 @@ input::-ms-clear {
 .button-telephone,
 .footer-contacts,
 .found,
+.list-about-hotel > a,
 .main-title,
-.name-hotel,
 .reasons-name {
   color: #000000;
   font-size: 21px;
