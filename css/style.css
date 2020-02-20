@@ -626,24 +626,25 @@ a {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
 }
 
 .social-button-facebook a::before {
   width: 12px;
   height: 22px;
-  background: url("../img/fb-icon.svg") no-repeat;
+  background-image: url("../img/fb-icon.svg");
 }
 
 .social-button-twitter a::before {
   width: 17px;
   height: 15px;
-  background: url("../img/twitter-icon.svg") no-repeat;
+  background-image: url("../img/twitter-icon.svg");
 }
 
 .social-button-youtube a::before {
   width: 20px;
   height: 16px;
-  background: url("../img/youtube-icon.svg") no-repeat;
+  background-image: url("../img/youtube-icon.svg");
 }
 
 .social-button a:active::before {
