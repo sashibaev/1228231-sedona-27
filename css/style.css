@@ -20,6 +20,8 @@ a {
   padding: 0;
   width: 1200px;
   background-color: #ffffff;
+  box-shadow: -5px 0 10px #d4d3d4,
+               5px 0 10px #d4d3d4;
 }
 
 .ascending-sort {
@@ -181,10 +183,17 @@ a {
 }
 
 .button-show {
+  display: block;
   color: #ffffff;
-  font-size: 21px;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: inherit;
+  margin-left: 84px;
+  padding: 6px 34px 5px 34px;
   border: 2px solid #ffffff;
-  background-color: rgba(111, 111, 111, 0);
+  border-radius: 2px;
+  cursor: pointer;
+  background: transparent;
 }
 
 .button-show:hover,
@@ -194,7 +203,88 @@ a {
 }
 
 .checkboxes {
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.controls-price { 
+  position: relative;
+  font-size: 0;
+  height: 36px;
+  margin-bottom: 20px;
+  padding-top: 2px;
+  box-sizing: border-box;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.controls-price::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+}
+
+.controls-price label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 21px;
+  vertical-align: center;
+  cursor: pointer;
+}
+
+.controls-price .min-price,
+.controls-price .max-price {
+  width: 90px;
+  padding-left: 65px;
+  box-sizing: border-box;
+}
+
+.controls-price input {
+  font-size: 14px;
+  line-height: 21px;
+  width: 66px;
+  margin: 0;
+  color: inherit;
+  background: none;
+  border: none;
+}
+
+.controls-range {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.controls-range .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.controls-range .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.controls-range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.controls-range-toggle:hover {
+  border-width: 9px;
+  border-radius: 50%;
 }
 
 .cost-hotel {
@@ -268,7 +358,7 @@ a {
 .found {
   line-height: 26px;
   margin-left: 72px;
-  margin-right: 31px;
+  margin-right: 8px;
 }
 
 .index-welcome {
@@ -288,6 +378,13 @@ a {
   padding-top: 76px;
   padding-bottom: 12px;
  }
+
+ .housing .reasons-name::before {
+  width: 75px;
+  height: 72px;
+  top: -101px;
+  background-image: url(../img/icon-house.svg);
+}
 
 .list-item {
   margin: 0;
@@ -376,6 +473,21 @@ a {
   line-height: 0;
 }
 
+.meal .reasons-name::before {
+  width: 74px;
+  height: 70px;
+  top: -99px;
+  background-image: url(../img/icon-burger.svg);
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
 .rating {
   display: inline-block;
   color: #666666;
@@ -407,6 +519,20 @@ a {
 .reasons-city-item {
   width: 300px;
   text-align: center;
+  padding-top: 161px;
+  box-sizing: border-box;
+}
+
+.reasons-city-item .reasons-name {
+  position: relative;
+}
+
+.reasons-city-item .reasons-name::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  background-repeat: no-repeat;
 }
 
 .reasons-list {
@@ -459,12 +585,6 @@ a {
   align-items: flex-start;
 }
 
-.reasons-item .reasons-name {
-  width: 150px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .reasons-item-image .reasons-text-name {
   font-size: 21px;
   font-weight: 700;
@@ -472,6 +592,20 @@ a {
   padding-top: 20px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.reasons-item .reasons-item-name {
+  width: 140px;
+}
+
+.reasons-name {
+  margin: 0 auto 25px auto;
+  width: 150px;
+  position: relative;
+}
+
+.reasons-text {
+  margin: 0 auto 80px auto; 
 }
 
 .reasons-title {
@@ -485,13 +619,12 @@ a {
 
 .result-of-search {
   margin: 0;
-  /*padding: 0 72px;*/
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .search {
   color: #ffffff;
-  padding-top: 30px;
+  padding-top: 23px;
   background-color: #6f6f6f;
   background-position: 0 -300px;
   background-repeat: no-repeat;
@@ -522,33 +655,74 @@ a {
   background-color: #503e33;
 }
 
+.search-filter {
+  margin: 0;
+  padding: 0;
+  margin-top: 2px;
+  margin-left: auto;
+  margin-right: 2px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.search-filter-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  margin-bottom: 11px;
+}
+
 .search-form {
-  height: 187px;
+  padding: 0px 71px 30px 72px;
   box-sizing: border-box;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  padding: 31px 72px;
+  align-items: flex-start;
+}
+
+.search-item {
+  margin-bottom: 20px;
+}
+
+.search-item input + label svg{
+  fill: #ffffff;
+}
+
+.search-item input:disabled + label svg{
+  fill: #6a6a6a;
+}
+
+.search-item:last-child {
+  margin-bottom: 0;
+}
+
+.search-item label {
+  display: block;
+  user-select: none;
+}
+
+.search-item svg {
+  vertical-align: middle;
+  margin-right: 11px;
 }
 
 .search-section-infrastructure {
-  margin-left: 50px;
+  padding: 0;
+  margin: 0;
+  margin-right: 117px;
   border: none;
 }
 
 .search-section-type {
-  margin-left: 80px;
+  padding: 0;
+  margin: 0;
   border: none;
-}
-
-.search-list {
-  margin-left: auto;
-  margin-right: 50px;
 }
 
 .search-section-subtitle {
   font-size: 16px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .site-navigation {
@@ -659,8 +833,21 @@ a {
   align-items: flex-start;
 }
 
-.sort-icon a {
-  color: #000000;
+.sort-icon svg {
+  fill: #cacaca;
+}
+
+.sort-icon-current svg {
+  fill: #81b3d2;
+}
+
+.sort-icon svg:hover,
+.sort-icon svg:focus {
+  fill: #000000;
+}
+
+.sort-icon svg:active {
+  fill: #81b3d2;
 }
 
 .sorting {
@@ -682,6 +869,14 @@ a {
   align-items: flex-start;
 }
 
+.sorting-by-border {
+  border-bottom: 1px dotted #81b3d2;;
+}
+
+.sorting-by-border:active {
+  border: none;
+}
+
 .sorting-by-item a {
   color: rgba(0, 0, 0, 0.3);
   font-size: 12px;
@@ -699,6 +894,13 @@ a {
 
 .sorting-by-item a:active {
   color: #000000;
+}
+
+.souvenirs .reasons-name::before {
+  width: 64px;
+  height: 76px;
+  top: -105px;
+  background-image: url(../img/icon-carton.svg);
 }
 
 .stars {
@@ -850,7 +1052,8 @@ a {
 .found,
 .list-about-hotel > a,
 .main-title,
-.reasons-name {
+.reasons-name,
+.reasons-item-name {
   color: #000000;
   font-size: 21px;
   font-weight: 700;
