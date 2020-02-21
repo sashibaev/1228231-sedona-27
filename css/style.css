@@ -682,14 +682,38 @@ a {
 
 .search-item {
   margin-bottom: 20px;
+  margin-left: 40px;
 }
 
-.search-item input + label svg{
-  fill: #ffffff;
+.search-item input + label {
+  position: relative;
+} 
+
+.search-item input + label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 2px;
+  width: 27px;
+  height: 23px;
+  background-repeat: no-repeat;
+  background-image: url("../img/checkbox-off.svg");
 }
 
-.search-item input:disabled + label svg{
-  fill: #6a6a6a;
+.search-item input:checked + label::before {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.search-item input:checked + label::before {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.search-item input:disabled:checked + label::before {
+  background-image: url("../img/checkbox-on-disabled.svg");
+}
+
+.search-item input:disabled + label::before {
+  background-image: url("../img/checkbox-off-disabled.svg");
 }
 
 .search-item:last-child {
