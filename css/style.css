@@ -202,6 +202,24 @@ a {
   background-color: #ffffff;
 }
 
+.checkbox-svg:checked + label .checkbox-on {
+  display: block;
+}
+
+.checkbox-svg + label .checkbox-on {
+  display: none;
+}
+
+.checkbox-svg:disabled + label .checkbox-on,
+.checkbox-svg:disabled + label .checkbox-off {
+  fill: #6a6a6a;
+}
+
+.checkbox-svg:focus + label .checkbox-on,
+.checkbox-svg:focus + label .checkbox-off {
+  fill: #e6bc8a;
+}
+
 .checkboxes {
   margin: 0;
   padding: 0;
@@ -271,6 +289,7 @@ a {
 }
 
 .controls-range-toggle {
+  padding: 2px;
   position: absolute;
   top: -9px;
   width: 4px;
@@ -682,38 +701,6 @@ a {
 
 .search-item {
   margin-bottom: 20px;
-  margin-left: 40px;
-}
-
-.search-item input + label {
-  position: relative;
-} 
-
-.search-item input + label::before {
-  content: "";
-  position: absolute;
-  left: -40px;
-  top: 2px;
-  width: 27px;
-  height: 23px;
-  background-repeat: no-repeat;
-  background-image: url("../img/checkbox-off.svg");
-}
-
-.search-item input:checked + label::before {
-  background-image: url("../img/checkbox-on.svg");
-}
-
-.search-item input:checked + label::before {
-  background-image: url("../img/checkbox-on.svg");
-}
-
-.search-item input:disabled:checked + label::before {
-  background-image: url("../img/checkbox-on-disabled.svg");
-}
-
-.search-item input:disabled + label::before {
-  background-image: url("../img/checkbox-off-disabled.svg");
 }
 
 .search-item:last-child {
