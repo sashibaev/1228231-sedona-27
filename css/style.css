@@ -400,15 +400,9 @@ a {
 }
 
 .form-map {
+  position: relative;
   line-height: 0;
   width: 1200px;
-  height: 473px;
-}
-
-.form-wrapper {
-  position: absolute;
-  width: 1200px;
-  height: 400px;
   overflow: hidden;
 }
 
@@ -505,7 +499,8 @@ a {
 
 .main-footer {
   position: relative;
-  z-index: 2;
+  z-index: 1;
+  margin-top: -120px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -542,16 +537,9 @@ a {
 }
 
 .map-iframe {
-  position: absolute;
-  content: "";
-  z-index: 1;
   width: 1200px;
-  height: 473px;
-}
-
-.map-image {
-  width: 1200px;
-  height: 473px;
+  height: 593px;
+  background: #c6e7c7 url(../img/map.png) no-repeat;
 }
 
 .meal .reasons-name::before {
@@ -718,16 +706,14 @@ a {
 
 .result-of-search {
   margin: 0;
+  margin-bottom: 120px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .search {
   color: #ffffff;
   padding-top: 27px;
-  background-color: #6f6f6f;
-  background-position: 0 -300px;
-  background-repeat: no-repeat;
-  background-image: url("../img/filter-background.jpg");
+  background: #6f6f6f url("../img/filter-background.jpg") no-repeat 0 -300px;
 }
 
 .search-button {
@@ -1097,9 +1083,6 @@ a {
 
 .to-find-form {
   position: absolute;
-  content: "";
-  z-index: 2;
-  display: none;
   margin: 0;
   width: 568px;
   background-color: #ffffff;
@@ -1108,21 +1091,11 @@ a {
   top: 0px;
   transform: translateX(-50%);
   box-sizing: border-box;
+  transition: 1s;
 }
 
-@keyframes smoothly-displayed {
-  0% {
-    transform: translate(-50%, -200px);
-  }
-  100% {
-    transform:translate(-50%, 0px);   
-  }
-}
-
-.find-form-show {
-  display: block;
-  animation-name: smoothly-displayed;
-  animation-duration: 1s;
+.find-form-condition {
+  top: -70%;
 }
 
 .to-find-item {

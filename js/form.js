@@ -16,15 +16,14 @@ try {
   isStorageSupport = false;
 }
 
-button.addEventListener("click", function(evt) {
-  popup.classList.toggle("find-form-show");
+popup.classList.add("find-form-condition");
 
+button.addEventListener("click", function(evt) {
+  popup.classList.toggle("find-form-condition");
   if (storage) {
     numberAdults = storageAdults;
     numberChildren = storageChildren;
   }
-
-  dateArrival.focus();
 });
 
 form.addEventListener("submit", function(evt) {
@@ -42,9 +41,7 @@ form.addEventListener("submit", function(evt) {
 window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (popup.classList.contains("find-form-show")) {
-      popup.classList.toggle("find-form-show");
-    }
+    popup.classList.toggle("find-form-condition");
   }
 });
 
