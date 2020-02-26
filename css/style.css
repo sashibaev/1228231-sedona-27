@@ -210,8 +210,16 @@ a {
   display: block;
 }
 
+.checkbox-svg:checked + label .checkbox-off {
+  display: none;
+}
+
 .checkbox-svg + label .checkbox-on {
   display: none;
+}
+
+.checkbox-svg + label .checkbox-off {
+  display: block;
 }
 
 .checkbox-svg:disabled + label .checkbox-on,
@@ -375,7 +383,7 @@ a {
   flex-wrap: wrap;
 }
 
-.form-wrapper-interested {
+.form-header-interested {
   color: #000000;
   font-size: 30px;
   font-weight: 700;
@@ -385,10 +393,23 @@ a {
   margin-bottom: 24px;
 }
 
-.form-wrapper-text {
+.form-header-text {
   text-align: center;
   margin-bottom: 47px;
   line-height: 24px;
+}
+
+.form-map {
+  line-height: 0;
+  width: 1200px;
+  height: 473px;
+}
+
+.form-wrapper {
+  position: absolute;
+  width: 1200px;
+  height: 400px;
+  overflow: hidden;
 }
 
 .found {
@@ -483,11 +504,14 @@ a {
 }
 
 .main-footer {
+  position: relative;
+  z-index: 2;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 33px 101px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .main-header-logo {
@@ -517,8 +541,17 @@ a {
   word-spacing: 1px;
 }
 
+.map-iframe {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  width: 1200px;
+  height: 473px;
+}
+
 .map-image {
-  line-height: 0;
+  width: 1200px;
+  height: 473px;
 }
 
 .meal .reasons-name::before {
@@ -1053,20 +1086,43 @@ a {
   padding-left: 13px;
 }
 
+.to-find-date input:focus,
+.to-find-date input:active {
+  padding-left: 11px;
+}
+
 .to-find-date input::-ms-clear {
   display: none;
 }
 
 .to-find-form {
+  position: absolute;
+  content: "";
+  z-index: 2;
+  display: none;
   margin: 0;
   width: 568px;
   background-color: #ffffff;
   padding: 55px;
-  position: absolute;
-  z-index: 2;
   left: 50%;
+  top: 0px;
   transform: translateX(-50%);
   box-sizing: border-box;
+}
+
+@keyframes smoothly-displayed {
+  0% {
+    transform: translate(-50%, -200px);
+  }
+  100% {
+    transform:translate(-50%, 0px);   
+  }
+}
+
+.find-form-show {
+  display: block;
+  animation-name: smoothly-displayed;
+  animation-duration: 1s;
 }
 
 .to-find-item {
