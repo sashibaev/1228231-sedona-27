@@ -249,8 +249,8 @@ a {
 }
 
 .controls-price::after {
-  content: "";
   position: absolute;
+  content: "";
   top: 50%;
   left: 50%;
   transform: translateY(-50%);
@@ -414,7 +414,10 @@ a {
 }
 
 .index-welcome {
-  background: #c9d4d6 url("../img/background-photo.jpg") no-repeat 0 -56px;
+  background-color: #c9d4d6;
+  background-image: url("../img/background-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 -56px;
 }
 
 .index-welcome::after {
@@ -435,7 +438,7 @@ a {
   width: 75px;
   height: 72px;
   top: -101px;
-  background-image: url(../img/icon-house.svg);
+  background-image: url("../img/icon-house.svg");
 }
 
 .list-item {
@@ -539,14 +542,16 @@ a {
 .map-iframe {
   width: 1200px;
   height: 593px;
-  background: #c6e7c7 url(../img/map.png) no-repeat;
+  background-color:#c6e7c7;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
 }
 
 .meal .reasons-name::before {
   width: 74px;
   height: 70px;
   top: -99px;
-  background-image: url(../img/icon-burger.svg);
+  background-image: url("../img/icon-burger.svg");
 }
 
 .range-toggle-min {
@@ -713,7 +718,10 @@ a {
 .search {
   color: #ffffff;
   padding-top: 27px;
-  background: #6f6f6f url("../img/filter-background.jpg") no-repeat 0 -300px;
+  background-color: #6f6f6f;
+  background-image: url("../img/filter-background.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 -300px;
 }
 
 .search-button {
@@ -999,7 +1007,7 @@ a {
   width: 64px;
   height: 76px;
   top: -105px;
-  background-image: url(../img/icon-carton.svg);
+  background-image: url("../img/icon-carton.svg");
 }
 
 .stars {
@@ -1007,7 +1015,8 @@ a {
   margin-left: auto;
   margin-bottom: 47px;
   height: 17px;
-  background: url("../img/star.svg") space;
+  background-image: url("../img/star.svg");
+  background-repeat: space;
 }
 
 .star-one {
@@ -1088,7 +1097,7 @@ a {
   background-color: #ffffff;
   padding: 55px;
   left: 50%;
-  top: 0px;
+  top: 0;
   transform: translateX(-50%);
   box-sizing: border-box;
   transition: 1s;
