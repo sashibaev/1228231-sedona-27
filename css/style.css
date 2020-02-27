@@ -414,7 +414,9 @@ a {
 }
 
 .index-welcome {
-  height: 508px;
+  position: relative;
+  padding-top: 76px;
+  padding-bottom: 79px;
   background-color: #c9d4d6;
   background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
@@ -422,20 +424,25 @@ a {
 }
 
 .index-welcome::after {
+  position: absolute;
   content: url("../img/intro-mask.svg");
-  position: relative;
+  width: 1200px;
+  height: 57px;
   bottom: 0;
+  left: 0;
 }
 
 .index-welcome img {
   display: block;
+  width: 459px;
+  height: 353px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 76px;
-  padding-bottom: 22px;
  }
 
  .housing .reasons-name::before {
+  position: absolute;
+  content: "";
   width: 75px;
   height: 72px;
   top: -101px;
@@ -549,6 +556,8 @@ a {
 }
 
 .meal .reasons-name::before {
+  position: absolute;
+  content: "";
   width: 74px;
   height: 70px;
   top: -99px;
@@ -1005,6 +1014,8 @@ a {
 }
 
 .souvenirs .reasons-name::before {
+  position: absolute;
+  content: "";
   width: 64px;
   height: 76px;
   top: -105px;
@@ -1093,6 +1104,7 @@ a {
 
 .to-find-form {
   position: absolute;
+  content: "";
   margin: 0;
   width: 568px;
   background-color: #ffffff;
