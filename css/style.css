@@ -414,6 +414,7 @@ a {
 }
 
 .index-welcome {
+  height: 508px;
   background-color: #c9d4d6;
   background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
@@ -423,7 +424,7 @@ a {
 .index-welcome::after {
   content: url("../img/intro-mask.svg");
   position: relative;
-  bottom: -10px;
+  bottom: 0;
 }
 
 .index-welcome img {
@@ -431,7 +432,7 @@ a {
   margin-right: auto;
   margin-left: auto;
   padding-top: 76px;
-  padding-bottom: 12px;
+  padding-bottom: 22px;
  }
 
  .housing .reasons-name::before {
