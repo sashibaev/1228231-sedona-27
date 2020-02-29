@@ -32,6 +32,7 @@ a {
 .button-academy {
   width: 115px;
   height: 41px;
+  margin-top: 6px;
   margin-left: 8px;
 }
 
@@ -123,6 +124,7 @@ a {
 
 .button-people::before {
   position: absolute;
+  content: "";
   z-index: 10;
   width: 11px;
   height: 3px;
@@ -143,6 +145,7 @@ a {
 
 .button-people-plus::after {
   position: absolute;
+  content: "";
   z-index: 10;
   width: 3px;
   height: 11px;
@@ -265,7 +268,8 @@ a {
   display: inline-block;
   font-size: 14px;
   line-height: 21px;
-  vertical-align: center;
+  vertical-align: top;
+  margin-top: 1px;
   width: 77px;
   box-sizing: border-box;
   cursor: pointer;
@@ -368,11 +372,12 @@ a {
   width: 352px;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .footer-copyright p {
   color: #000000;
+  line-height: 26px; 
 }
 
 .footer-social {
@@ -764,6 +769,11 @@ a {
   background-color: #503e33;
 }
 
+.search-button:focus span,
+.search-button:active span {
+  position: relative;
+}
+
 .search-filter {
   margin: 0;
   padding: 0;
@@ -899,6 +909,10 @@ a {
 
 .site-navigation-current a {
   color: #766357;
+}
+
+.social-button {
+  margin: 3px 3px 5px 3px;
 }
 
 .social-button a {
@@ -1095,6 +1109,11 @@ a {
   background-color: #5496bd;
 }
 
+.to-find-button:focus span,
+.to-find-button:active span {
+  position: relative;
+}
+
 .to-find-date {
   margin-bottom: 29px;
 }
@@ -1109,6 +1128,10 @@ a {
   min-height: 38px;
   box-sizing: border-box;
   padding-left: 13px;
+}
+
+.to-find-date input:focus {
+  padding-left: 11px;
 }
 
 .to-find-date input::-ms-clear {
